@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----------------GENERALES-----------------*/
+
+body{
+    font-family: "Public Sans", sans-serif;
+}
+/*-----------------GRID-----------------*/
+
+.grid-header{
+    grid-area: grid-header;
+}
+
+.grid-nav{
+    grid-area: grid-nav;
+}
+
+.grid-main{
+    grid-area: grid-main;
+}
+
+.grid-info{
+    grid-area: grid-info;
+    width: 100%;
+}
+
+.grid-footer{
+    grid-area: grid-footer;
+}
+
+@media  (max-width:500px){
+    .grid-body{ 
+        display: grid;
+        gap:0 0;
+        grid-template-areas: 
+        "grid-header"
+        "grid-nav"
+        "grid-main"
+        "grid-info"
+        "grid-footer";
+    }
+}
+
+
+
+
+
+
+/*@media (min-width: 900px){
+    .grid-body{  display: grid;
+        grid-template-columns: 0.7fr 1.3fr 1fr;
+        grid-template-rows: 0.6fr 1.4fr 1.6fr 0.8fr; 
+        grid-auto-columns: 1fr;
+        gap: 0 0;
+        grid-template-areas:
+        "grid-header  grid-nav     grid-nav"
+        "grid-main    grid-main    grid-main"
+        "grid-info    grid-info    grid-info"
+        "grid-footer  grid-footer  grid-footer"
+    }
+}/*
+
+
+
+
+
+/*-----------------HEADER/NAV-----------------*/
+
+
+/*-----------------NAV VISTA MOVIL-----------------*/
+
+@media  (max-width:500px){
+
+    .grid-movil{
+        display: flex;
+        font-size: 40px;
+        justify-content: space-around;
+    }
+    
+    .grid-nav ul {
+        display: none;
+    }
+}
+
+/*-----------------MAIN-----------------*/
+
+@media  (max-width:500px){
+    .grid-main{
+        background-image: url(../multimedia/gato-uno.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 40px 0px;
+    }
+
+    .grid-main h2{
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+        font-size: 30px;
+        background-color: #ffffff75;
+    }
+
+    .grid-main p{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        font-size: 20px;
+        background-color: #ffffff75;
+    }
+}
+
+/*-----------------INFO-----------------*/
+
+@media  (max-width:500px){
+
+    .grid-info{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .grid-info article h3{
+        font-size: 35px;
+        color:  black;
+        text-align: center;
+    }
+
+    .grid-info article img{
+        width: 300px;
+        height: 300px;
+        border-radius: 80px;
+        border: 6px solid black;
+        margin: 50px;
+    }
+
+    .grid-info article p{
+        font-size: 18px;
+        color: #ffffffa6;
+        background-color: #0000006b;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 30px;
+        
+    }
+}
+
+/*-----------------FOOTER-----------------*/
+
+@media  (max-width:500px){
+    .grid-footer{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        padding: 50px;
+    }
+
+    .grid-footer p{
+        font-size: 20px;
+        padding: 20px 0;
+    }
+
+    .grid-footer ul{
+        font-size: 15px;
+    }
+
+    .grid-footer li {
+        display: inline-block;
+    }
+    .grid-footer li a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+
+
+/*.grid-logo img{
+    width: 220px;
+    padding: 2px;
+}
+
+.grid-nav{
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@media (hover:hover){
+    .grid-nav ul li:hover{
+        background-color: #5151f1;
+        transition: 1s;
+        border-radius: 50px;
+    }
+}
+
+.grid-nav li{
+    display: inline-block;
+    padding: 30px;
+}
+.grid-nav li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.grid-movil{
+    display: none;
+}
+
+
+ul.show{
+    top: 65px;
+}
+
+@media (max-width: 600px){
+    .grid-logo{
+        font-size: 20px;
+        padding-left: 35px;
+    }
+    .grid-movil{
+        display: flex;
+        font-size: 40px;
+
+    }
+    .grid-nav ul{
+        display: none;
+    }
+}*/
+
+
